@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <title>Compte Rendu TP2</title>
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
     <style>
         .page-wrapper {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            min-height: 80vh;
+            justify-content: flex-start;
+            padding: 60px 20px;
+            min-height: 100vh;
             text-align: center;
         }
-
+        .section-container {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 60px;
+        }
         .menu-container {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 15px;
             align-items: center;
-            margin-top: 40px;
+            margin-top: 25px;
         }
-
         a.menu-btn {
             display: inline-block;
             color: #8faadc;
@@ -33,30 +36,48 @@
             border-radius: 8px;
             transition: all 0.3s ease;
             font-weight: bold;
-            min-width: 350px;
+            min-width: 350px;  
         }
-
         a.menu-btn:hover {
             background-color: #8faadc;
             color: #262626;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(143, 170, 220, 0.2);
         }
+        .section-title {
+            color: #ffffff;
+            font-size: 26px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #444;
+            padding-bottom: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
     </style>
 </head>
-
 <body>
     <div class="header page-wrapper">
-        <div class="title" style="font-size: 36px; margin-bottom: 20px;">Compte Rendu - Realise par Hmoute Oussama GI1
+        <div class="title" style="font-size: 36px; margin-bottom: 50px; color: #8faadc; font-weight: bold;">Compte Rendu - Realise par Hmoute Oussama GI1</div>
+        
+        <!-- EXERCICE 1 -->
+        <div class="section-container">
+            <div class="section-title">Exercice 1</div>
+            <div class="menu-container">
+                <a href="solution_absolu.html" class="menu-btn">1. Positionnement Absolu</a>
+                <a href="solution_relatif.html" class="menu-btn">2. Positionnement Relatif</a>
+                <a href="solution_bootstrap.html" class="menu-btn">3. Solution avec Bootstrap</a>
+            </div>
         </div>
-        <div class="question" style="color: #cccccc; margin-bottom: 30px;">Solutions de l'Exercice 1 :</div>
 
-        <div class="menu-container">
-            <a href="solution_absolu.html" class="menu-btn">1. Solution par Positionnement Absolu</a>
-            <a href="solution_relatif.html" class="menu-btn">2. Solution par Positionnement Relatif</a>
-            <a href="solution_bootstrap.html" class="menu-btn">3. Solution avec Bootstrap</a>
+        <!-- EXERCICE 2 -->
+        <div class="section-container">
+            <div class="section-title">Exercice 2</div>
+            <div class="menu-container">
+                <a href="ex2_css.html" class="menu-btn">1 & 2. Solution CSS Pure (Responsive)</a>
+                <a href="ex2_bootstrap.html" class="menu-btn">3. Solution Bootstrap</a>
+            </div>
         </div>
     </div>
 </body>
-
 </html>
