@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Exercice 2 - CSS Pure</title>
@@ -28,49 +29,110 @@
             min-height: 80px;
         }
 
-        .ex2-header, .ex2-sec0, .ex2-footer { grid-column: span 4; }
-        .ex2-sec1, .ex2-sec2, .ex2-sec3, .ex2-sec4 { grid-column: span 1; min-height: 140px; }
-        .ex2-sec5, .ex2-sec6 { grid-column: span 2; min-height: 120px; }
-
-        .bg-header { background-color: #5b9bd5; }
-        .bg-sec0 { background-color: #c4bd97; }
-        .bg-sec1 { background-color: #c6d9f1; }
-        .bg-sec2 { background-color: #e6b8b7; }
-        .bg-sec3 { background-color: #c4d79b; }
-        .bg-sec4 { background-color: #fabf8f; }
-        .bg-sec5, .bg-sec6 { background-color: #00b0f0; }
-        .bg-footer { background-color: #b3a2c7; }
-
-        /* Tablet Responsive */
-        @media (max-width: 900px) {
-            .ex2-sec1, .ex2-sec2, .ex2-sec3, .ex2-sec4 { grid-column: span 2; min-height: 90px; }
-            .ex2-sec5, .ex2-sec6 { grid-column: span 4; min-height: 90px;}
+        .ex2-header,
+        .ex2-sec0,
+        .ex2-footer {
+            grid-column: span 4;
         }
 
-        /* Mobile Responsive */
+        .ex2-sec1,
+        .ex2-sec2,
+        .ex2-sec3,
+        .ex2-sec4 {
+            grid-column: span 1;
+            min-height: 140px;
+        }
+
+        .ex2-sec5,
+        .ex2-sec6 {
+            grid-column: span 2;
+            min-height: 120px;
+        }
+
+        .bg-header {
+            background-color: #5b9bd5;
+        }
+
+        .bg-sec0 {
+            background-color: #c4bd97;
+        }
+
+        .bg-sec1 {
+            background-color: #c6d9f1;
+        }
+
+        .bg-sec2 {
+            background-color: #e6b8b7;
+        }
+
+        .bg-sec3 {
+            background-color: #c4d79b;
+        }
+
+        .bg-sec4 {
+            background-color: #fabf8f;
+        }
+
+        .bg-sec5,
+        .bg-sec6 {
+            background-color: #00b0f0;
+        }
+
+        .bg-footer {
+            background-color: #b3a2c7;
+        }
+
+
+        @media (max-width: 900px) {
+
+            .ex2-sec1,
+            .ex2-sec2,
+            .ex2-sec3,
+            .ex2-sec4 {
+                grid-column: span 2;
+                min-height: 90px;
+            }
+
+            .ex2-sec5,
+            .ex2-sec6 {
+                grid-column: span 4;
+                min-height: 90px;
+            }
+        }
+
+
         @media (max-width: 600px) {
-            .ex2-sec1, .ex2-sec2, .ex2-sec3, .ex2-sec4 { grid-column: span 4; }
+
+            .ex2-sec1,
+            .ex2-sec2,
+            .ex2-sec3,
+            .ex2-sec4 {
+                grid-column: span 4;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="header" style="text-align: center;">
-        <div class="title" style="font-size: 32px; color: #8faadc; margin-bottom: 10px;">Exercice 2 : CSS Pure (Responsive)</div>
-        <div class="question" style="color: #cccccc; margin-bottom: 20px; font-size: 22px; font-weight: bold;">Faisons la question 1 et 2 :</div>
+        <div class="title" style="font-size: 32px; color: #8faadc; margin-bottom: 10px;">Exercice 2 : CSS Pure
+            (Responsive)</div>
+        <div class="question" style="color: #cccccc; margin-bottom: 20px; font-size: 22px; font-weight: bold;">Faisons
+            la question 1 et 2 : (Faites glisser l’écran pour observer le comportement responsive du site.)</div>
     </div>
 
     <div class="ex2-canvas">
         <div class="ex2-box bg-header ex2-header">En-tête de page</div>
         <div class="ex2-box bg-sec0 ex2-sec0">Section 0</div>
-        
+
         <div class="ex2-box bg-sec1 ex2-sec1">Section 1</div>
         <div class="ex2-box bg-sec2 ex2-sec2">Section 2</div>
         <div class="ex2-box bg-sec3 ex2-sec3">Section 3</div>
         <div class="ex2-box bg-sec4 ex2-sec4">Section 4</div>
-        
+
         <div class="ex2-box bg-sec5 ex2-sec5">Section 5</div>
         <div class="ex2-box bg-sec6 ex2-sec6">Section 6</div>
-        
+
         <div class="ex2-box bg-footer ex2-footer">Pied de page</div>
     </div>
 
@@ -78,4 +140,5 @@
         <a href="compterendutp2.html" class="back-link">Retour à l'accueil</a>
     </div>
 </body>
+
 </html>
