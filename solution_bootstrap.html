@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Solutions - Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=4">
+    <style>
+        .bs-canvas {
+            background-color: white;
+            position: relative;
+        }
+        .bs-box {
+            height: 100px;
+            border: 4px solid #3069ad;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">Exercice 1 :</div>
+        <div class="question">1. &nbsp;Ecrire le code HTML et CSS pure permettant de construire les interfaces décrites sur les<br>&nbsp;&nbsp;&nbsp;&nbsp;figures 1, 2, 3, et 4 en utilisant deux méthodes différentes :</div>
+        <ul class="methods">
+            <li>- &nbsp;&nbsp;&nbsp;&nbsp;Positionnement absolu</li>
+            <li>- &nbsp;&nbsp;&nbsp;&nbsp;Positionnement relatif</li>
+        </ul>
+    </div>
+
+    <div class="figures-container">
+        <div class="figure-wrapper">
+            <div class="bs-canvas" style="width: 100px; height: 310px;">
+                <div class="d-flex flex-column" style="gap: 5px;">
+                    <div class="bs-box red w-100"></div>
+                    <div class="bs-box olive w-100"></div>
+                    <div class="bs-box blue w-100"></div>
+                </div>
+            </div>
+            <div class="figure-label">Figure 1</div>
+        </div>
+
+        <div class="figure-wrapper">
+            <div class="bs-canvas" style="width: 300px; height: 300px;">
+                <div class="row g-0">
+                    <div class="col-4 bs-box red"></div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-4 offset-4 bs-box olive"></div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-4 offset-8 bs-box blue"></div>
+                </div>
+            </div>
+            <div class="figure-label">Figure 2</div>
+        </div>
+
+        <div class="figure-wrapper">
+            <div class="bs-canvas" style="width: 205px; height: 205px;">
+                <div class="d-flex flex-column" style="gap: 5px;">
+                    <div class="bs-box red w-100"></div>
+                    <div class="d-flex" style="gap: 5px;">
+                        <div class="bs-box olive" style="width: 100px;"></div>
+                        <div class="bs-box blue" style="width: 100px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="figure-label">Figure 3</div>
+        </div>
+
+        <div class="figure-wrapper">
+            <div class="bs-canvas" style="width: 205px; height: 205px;">
+                <div class="d-flex flex-column" style="gap: 5px;">
+                    <div class="d-flex" style="gap: 5px;">
+                        <div class="bs-box red" style="width: 100px;"></div>
+                        <div class="bs-box blue" style="width: 100px;"></div>
+                    </div>
+                    <div class="d-flex" style="gap: 5px;">
+                        <div class="bs-box olive" style="width: 100px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="figure-label">Figure 4</div>
+        </div>
+    </div>
+
+    <a href="compterendutp2.html" class="back-link">Retour à l'accueil</a>
+</body>
+</html>

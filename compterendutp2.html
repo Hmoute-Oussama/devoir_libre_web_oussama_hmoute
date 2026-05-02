@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Compte Rendu TP2</title>
+    <link rel="stylesheet" href="style.css?v=4">
+    <style>
+        .page-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+        }
+        .menu-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin-top: 40px;
+        }
+        a.menu-btn {
+            display: inline-block;
+            color: #8faadc;
+            text-decoration: none;
+            font-size: 18px;
+            border: 2px solid #8faadc;
+            padding: 12px 25px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            min-width: 350px; /* Make buttons uniform width */
+        }
+        a.menu-btn:hover {
+            background-color: #8faadc;
+            color: #262626;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(143, 170, 220, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="header page-wrapper">
+        <div class="title" style="font-size: 36px; margin-bottom: 20px;">Compte Rendu - Realise par Hmoute Oussama GI1</div>
+        <div class="question" style="color: #cccccc; margin-bottom: 30px;">Solutions de l'Exercice 1 :</div>
+        
+        <div class="menu-container">
+            <a href="solution_absolu.html" class="menu-btn">1. Solution par Positionnement Absolu</a>
+            <a href="solution_relatif.html" class="menu-btn">2. Solution par Positionnement Relatif</a>
+            <a href="solution_bootstrap.html" class="menu-btn">3. Solution avec Bootstrap</a>
+        </div>
+    </div>
+</body>
+</html>
